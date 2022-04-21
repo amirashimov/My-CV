@@ -1,73 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir's website</title>
-    
-</head>
-<body>
-    <table>
-        <tr>
-            <td><img src="photo_2022-04-16 15.18.23.jpeg" alt="it's my photo" width="250px" height="300px"></td>
-            <td><h1><strong>Amirkhan Ashimov</strong></h1>
-                <p><em>I am a student</em></p>
-                <p>I like to play basketball,coding and dota2</p></td>
-        </tr>
-    </table>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Amirkhan CV</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="photo_2022-04-16 15.18.23.jpeg" alt="тут моя фотка" class="avatar" width="200px" height="250px" />
 
-    <h1><strong>Amirkhan Ashimov</strong></h1>
-    <p><em>I am a student</em></p>
-    <p>I like to play basketball,coding and dota2</p>
+        <div class="info-text">
+          <h1>Amirkhan Ashimov</h1>
+          <p>The student of IITU</p>
+          <p>I like to code with JavaScript</p>
 
-    <hr>
-    <h2>My social networks</h2>
-    <ul>
-        <li><a href="https://www.instagram.com/" target="_blank">Instagram<a></li>
-        <li><a href="https://vk.com/a.ashimov2" target="_blank">Vkontakte</a></li>
-    </ul>
-    <hr>
-    <h2>Contact me</h2>
-    
-    <h2>Experience</h2>
-        <table border="1"> 
-            <tr>
-                <th>Company</th>
-                <th>Position</th>
-                <th>Years of work</th>
-            </tr>
-            <tr>
-                <td>Kaspi</td>
-                <td>Manager</td>
-                <td>2021-2022</td>
-            </tr>
-            <tr>
-                <td>KazStroy</td>
-                <td>Worker</td>
-                <td>2019-2020</td>
-            </tr>
-            
+          <h4>Мои социальные сети</h4>
+          
+          <a href="https://www.instagram.com/amirashimov_/" target="_blank">Instagram</a>
+          |
+          <a target="_blank" href="https://github.com/amirashimov">GitHub</a>
+        </div>
+        
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Netflix</li>
+          <li>Basketball</li>  
+          <li>Ping-pong</li>
+          <li>Dota 2</li>
+        </ol>
+      </div>
+
+      
+      <div class="card bg-green">
+        <h2>Experience of work</h2>
+        <table class="table">
+          <tr>
+            <td>KazStroy</td>
+            <td>Worker</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>Kaspi</td>
+            <td>Manager</td>
+            <td>2021-2022</td>
+          </tr>
+          
+          
         </table>
-        <hr>
+      </div>
+
     
+      <div class="card bg-red">
+        <h2>Projects</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/amirashimov?tab=repositories">Projects</a>
+          </li> 
+        </ul>
+      </div>
 
-    <h2>My hobbies</h2>
-    <ol>
-        <li>Netflix</li>
-        <li>Basketball</li>
-        <li>Ping-pong</li>
-    </ol>
-    <form>
-        <label for="name">Your name:</label>
-        <input type="text" id="name" placeholder="Your name">
-        <br>
-        <label for="email">Your email:</label>
-        <input type="email" id="name" placeholder="Your email">
-        <br>
-        <label for="text">Your message</label>
-        <textarea  id="text" cols="10" rows="5  "></textarea>
-    </form>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
 
-</body>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя...">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email...">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="text">Вашe сообщение:</label>
+            
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
+
+          <input class="btn" type="submit" value="Связаться!">
+        </form>
+      </div>
+
+
+      
+  </body>
 </html>
